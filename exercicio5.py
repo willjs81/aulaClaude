@@ -9,10 +9,16 @@ Adicione uma função salvar_cadastros(cadastros) que salva os dados em um arqui
 Cada pessoa em uma linha no formato: Nome: X | Idade: X | Cidade: X
 No final do programa, chame essa função para salvar os cadastros no arquivo
 Dica: use a função open() para criar e escrever no arquivo, e o método write() para adicionar conteúdo. Lembre-se de fechar o arquivo após escrever.
+Funções sao declaradas antes de loops e blocos principais, e podem ser chamadas em qualquer parte do código depois de sua definição.
 
 """
+def salvar_cadastros(cadastros):
+    with open("cadastros.txt", "w") as arquivo:
+        for cadastro in cadastros:
+            linha = f"Nome: {cadastro['nome']} | Idade: {cadastro['idade']} | Cidade: {cadastro['cidade']}\n"
+            arquivo.write(linha)
 cadastros = []
-while True:
+while True: 
     nome = input("Digite o nome (ou 'sair' para encerrar): ")
     if nome.lower() == "sair":
         break
@@ -30,13 +36,6 @@ while True:
         "cidade": cidade
     }
     cadastros.append(pessoa)
-
-def salvar_cadastros(cadastros):
-    with open("cadastros.txt", "w") as arquivo:
-        for pessoa in cadastros:
-            linha = f"Nome: {pessoa['nome']} | Idade: {pessoa['idade']} | Cidade: {pessoa['cidade']}\n"
-            arquivo.write(linha)
-
 salvar_cadastros(cadastros)
 print("\nCadastros realizados:")
 for cadastro in cadastros:
