@@ -15,3 +15,12 @@ Para ler arquivo use open("cadastros.txt", "r")
 Para tratar arquivo inexistente use try/except FileNotFoundError
 
 """
+try:
+    with open("cadastros.txt", "r") as arquivo:
+        linhas = arquivo.readlines()
+        for linha in linhas:
+            print(linha.strip())
+        print(f"\nTotal de pessoas cadastradas: {len(linhas)}")
+except FileNotFoundError:
+    print("O arquivo 'cadastros.txt' não foi encontrado.")
+    
