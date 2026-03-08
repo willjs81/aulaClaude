@@ -1,3 +1,2 @@
-Nome: teste um | Idade: 54 | Cidade: SP
-Nome: teste dois | Idade: 23 | Cidade: MG
-Nome: encerrar | Idade: 23 | Cidade: RJ
+Nome: meu nome | Idade: 23 | Cidade: SP
+Nome: meu nome 2 | Idade: 34 | Cidade: MG
