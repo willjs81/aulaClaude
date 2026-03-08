@@ -1,0 +1,11 @@
+models:
+  - name: Claude Sonnet
+    provider: anthropic
+    model: claude-sonnet-4-20250514
+    apiKey: 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
+
+tabAutocompleteModel:
+  name: Claude Haiku
+  provider: anthropic
+  model: claude-haiku-4-5-20251001
+  apiKey: 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
