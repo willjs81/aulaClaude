@@ -1,2 +1,0 @@
-Nome: meu nome | Idade: 23 | Cidade: SP
-Nome: meu nome 2 | Idade: 34 | Cidade: MG

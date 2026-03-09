@@ -1,4 +1,0 @@
-Nome: teste 1, Idade: 43, Cidade: SP
-Nome: meu nome, Idade: 23, Cidade: SP
-Nome: meu nome, Idade: 34, Cidade: SP
-Nome: seu nome, Idade: 76, Cidade: MG
